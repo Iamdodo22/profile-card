@@ -1,0 +1,93 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Kumbh Sans', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background:url("./images/bg-pattern-top.svg")  no-repeat right 50vw bottom 30vh,
+     url("./images/bg-pattern-bottom.svg") no-repeat left 40vw top 58vh,
+    hsl(185, 75%, 39%);
+}
+@media (max-width:375px) {
+    body{
+        background:url("./images/bg-pattern-top.svg")  no-repeat right 50vw bottom 60vh,
+     url("./images/bg-pattern-bottom.svg") no-repeat left 20vw top 38vh,
+     hsl(185, 75%, 39%);
+    }
+}
+main{
+    text-align: center;
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: 18vw;
+    grid-template-rows: 110px 110px 75px;
+    justify-content: center; 
+    align-content: center;
+}
+@media (max-width:375px) {
+    .grid-container{
+        grid-template-columns: 50vw;
+        grid-template-rows: 110px 110px 75px;
+    }
+}
+.grid{
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    border: .5px solid rgb(36, 191, 191);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+.white{
+    background-color: #ffffff;
+    border: .5px solid white;
+}
+.item1{
+    border-radius: 15px 15px 0 0;
+    background-image: url("images/bg-pattern-card.svg");
+}
+.item3{
+    border-top: lightgray .5px solid;
+    border-radius: 0 0 15px 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.image-victor{
+    border: 4px solid white;
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    position: absolute;
+    top: 222px;
+    left: 37.7rem;
+}
+@media (max-width:375px) {
+    .image-victor{
+        position: absolute;
+        top: 17rem;
+        left: 9.5rem;
+    }
+}
+.white p,span{
+    opacity: 0.6;
+}
+h2,h1{
+    font-size: 18px;
+}
+p{
+    font-size: 10px;
+}
