@@ -33,6 +33,24 @@ main{
     justify-content: center; 
     align-content: center;
 }
+@media (max-width:1000px) {
+    .grid-container{
+        grid-template-columns: 35vw;
+        grid-template-rows: 110px 110px 75px;
+    }
+}
+@media (max-width:800px) {
+    .grid-container{
+        grid-template-columns: 45vw;
+        grid-template-rows: 110px 110px 75px;
+    }
+}
+@media (max-width:500px) {
+    .grid-container{
+        grid-template-columns: 50vw;
+        grid-template-rows: 110px 110px 75px;
+    }
+}
 @media (max-width:375px) {
     .grid-container{
         grid-template-columns: 50vw;
@@ -56,6 +74,10 @@ main{
 .item1{
     border-radius: 15px 15px 0 0;
     background-image: url("images/bg-pattern-card.svg");
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .item3{
     border-top: lightgray .5px solid;
@@ -71,17 +93,10 @@ main{
     height: 70px;
     width: 70px;
     border-radius: 50%;
-    position: absolute;
-    top: 222px;
-    left: 37.7rem;
+    position: relative;
+    top: 50px;
 }
-@media (max-width:375px) {
-    .image-victor{
-        position: absolute;
-        top: 17rem;
-        left: 9.5rem;
-    }
-}
+
 .white p,span{
     opacity: 0.6;
 }
